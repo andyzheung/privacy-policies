@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>停车印记隐私政策</title>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <link rel="icon" href="data:image/ico;base64,aWNv" />
+  </head>
+  <body>
+    <div id="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+        <path class="icon-emphasize" d="M48 9L78 21L78 45C78 63.5 65.5 79.5 48 87C30.5 79.5 18 63.5 18 45L18 21L48 9Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round" />
+        <path class="icon-emphasize" d="M36 47L45 56L61 40" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <h2 id="privacyName">停车印记隐私政策</h2>
+    <p id="update-time"><span class="font-secondary">生效日期：2026年08月09日</span></p>
+
+    <p><b>开发者</b>：张文博</p>
+    <p><b>服务名称</b>：停车印记（元服务）</p>
+    <p>停车印记（以下简称「本服务」）由张文博开发和运营。我们非常重视你的个人信息保护。本政策说明我们收集哪些信息、如何使用、存放在哪里，以及你拥有哪些权利。请你在使用本服务前完整阅读本政策。</p>
+
+    <h5>一、我们收集哪些信息</h5>
+    <p>本服务是<b>本地优先</b>的元服务：除展示地图外，你的数据不上传、不出网。我们没有服务器，因此不存在服务端的数据副本。</p>
+    <table>
+      <tr><th>信息</th><th>何时采集</th><th>存在哪里</th><th>是否出网</th></tr>
+      <tr><td>停车位置坐标</td><td>你点击「标记停车」时</td><td>设备本地（本服务私有目录）</td><td>否</td></tr>
+      <tr><td>车位照片</td><td>你在记录向导中主动拍照时</td><td>设备本地（本服务沙箱目录）</td><td>否</td></tr>
+      <tr><td>停车告示牌照片</td><td>你使用「扫规则」拍摄时</td><td><b>不保存</b>——仅使用系统相机返回的临时文件，从不复制到本服务目录</td><td>否</td></tr>
+      <tr><td>停车记录（时间、备注、限时与费率）</td><td>你操作产生</td><td>设备本地（本服务私有目录）</td><td>否</td></tr>
+      <tr><td>地图显示所需的位置信息</td><td>详情页或向导展示地图时</td><td>不由本服务保存</td><td><b>是</b>，见第三节</td></tr>
+    </table>
+    <p>我们<b>不收集</b>：设备标识符、通讯录、通话记录、短信、应用安装列表、剪贴板内容。</p>
+    <p>本服务<b>不设置账号体系</b>，不要求你注册或登录。</p>
+
+    <h5>二、权限说明</h5>
+    <p>本服务采用<b>场景内申请</b>——只有你触发对应功能时才会弹出授权请求，不会在启动时集中索取权限。</p>
+    <table>
+      <tr><th>权限</th><th>何时申请</th><th>用途</th><th>拒绝后的影响</th></tr>
+      <tr><td>位置信息（精确 / 模糊）</td><td>你点击「标记停车」时</td><td>记录停车位置，并在地图上标出</td><td>无法自动记录位置，其余功能可用</td></tr>
+      <tr><td>相机</td><td>你拍摄车位照片或停车告示牌时</td><td>拍摄车位照片以便回来辨认；拍摄告示牌以便对照填写限时与费率</td><td>无法拍照，可改为手动填写备注与规则</td></tr>
+      <tr><td>网络访问</td><td>展示地图时</td><td>向华为地图服务请求地图图块</td><td>地图无法显示，其余功能可用</td></tr>
+      <tr><td>网络状态</td><td>展示地图时</td><td>判断网络是否可用，避免无谓请求</td><td>同上</td></tr>
+    </table>
+    <p>你可以随时在「设置 → 应用与元服务 → 停车印记 → 权限」中撤回任何已授予的权限。</p>
+
+    <h5>三、第三方服务：华为地图服务（Map Kit）</h5>
+    <p><b>这是本服务会产生网络传输的场景，请特别注意。</b></p>
+    <p>当你查看停车详情页或记录向导中的地图时，本服务会调用华为地图服务（Map Kit）获取地图图块。该过程中，<b>你的位置坐标会被发送至华为地图服务</b>以换取对应区域的地图数据。</p>
+    <p>（1）这是显示地图所必需的，无法在保留地图功能的前提下避免；</p>
+    <p>（2）该数据由华为按其隐私政策处理，不由本服务控制；</p>
+    <p>（3）若你不希望产生此传输，可不使用地图相关界面；停车记录、计时与历史统计不依赖地图。</p>
+    <p>除华为地图服务外，本服务<b>不接入任何第三方 SDK</b>，不含统计分析、广告、崩溃上报等组件，工程内不存在任何自建网络请求代码。</p>
+
+    <h5>四、数据存储与保留</h5>
+    <p>（1）所有停车记录与车位照片存储在<b>你设备上本服务的私有目录</b>，其他应用无法访问；</p>
+    <p>（2）我们没有服务器，不存在服务端副本、备份或数据库；</p>
+    <p>（3）数据保留至你主动删除，或卸载本服务；</p>
+    <p>（4）<b>卸载即清除</b>：删除本元服务会一并移除其私有目录下的全部记录与照片。</p>
+    <p><b>例外</b>：你主动使用「导出报告」功能生成的文件，会保存到你所选择的手机存储位置（不在本服务的私有目录内），该文件<b>不随卸载删除</b>，需由你自行管理或删除。</p>
+
+    <h5>五、数据共享</h5>
+    <p>我们<b>不会</b>出售、出租或以任何形式交易你的信息。除第三节所述的地图服务调用外，我们不向任何第三方提供你的数据。</p>
+    <p>法律法规另有强制要求时，我们将在法律允许的范围内履行相应义务。</p>
+
+    <h5>六、你的权利</h5>
+    <p><b>查看</b>：所有停车记录均在本服务内可见；</p>
+    <p><b>删除</b>：可删除单条停车记录及其照片；卸载本服务可清除全部本地数据；</p>
+    <p><b>导出</b>：可将停车历史导出为报告文件；</p>
+    <p><b>撤回授权</b>：随时在系统设置中关闭任一已授予的权限；</p>
+    <p><b>咨询与投诉</b>：andyzheung@aliyun.com</p>
+    <p>由于我们不持有你的任何数据副本，上述操作<b>在你的设备上即时生效</b>，无需向我们提出申请或等待处理。</p>
+
+    <h5>七、未成年人保护</h5>
+    <p>本服务面向驾驶人群，不面向未满 14 周岁的儿童，也不会主动收集儿童个人信息。若你是未成年人的监护人且对此有疑问，请通过 andyzheung@aliyun.com 与我们联系。</p>
+
+    <h5>八、政策更新</h5>
+    <p>本政策如有变更，我们将在本页面公示更新后的版本与生效日期。涉及数据处理方式实质性变化的，我们将以显著方式提示。</p>
+
+    <h5>九、联系我们</h5>
+    <p>开发者：张文博</p>
+    <p>联系邮箱：andyzheung@aliyun.com</p>
+    <p>响应时效：工作日 48 小时内回复邮件</p>
+    <p style="margin-top:2rem"><a href="./user-agreement.html">《停车印记用户协议》</a></p>
+  </body>
+</html>
+
+<style type="text/css">
+  * {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  body {
+    max-width: 860px;
+    margin: auto;
+    padding: 2rem 2rem 5rem 2rem;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    color: #0a59f7;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #icon {
+    font-size: 0;
+    text-align: center;
+  }
+  #icon svg {
+    width: 4rem;
+    height: 4rem;
+  }
+  #privacyName {
+    margin: 2rem 0 0.5rem;
+    text-align: center;
+    font-size: 18px;
+  }
+  #update-time {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #update-time span {
+    font-size: 14px;
+  }
+  .font-secondary {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .icon-emphasize {
+    color: rgba(10, 89, 247, 1);
+  }
+  h5 {
+    word-break: break-all;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    word-break: break-all;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    display: block;
+    overflow-x: auto;
+  }
+  th,
+  td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0.7rem;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    vertical-align: top;
+  }
+  th {
+    background: rgba(10, 89, 247, 0.06);
+    white-space: nowrap;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #000000;
+    }
+    .font-secondary {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .icon-emphasize {
+      color: rgba(82, 145, 255, 1);
+    }
+    * {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    th,
+    td {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    th {
+      background: rgba(82, 145, 255, 0.12);
+    }
+    a {
+      color: #5291ff;
+    }
+  }
+</style>
