@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<title>EchoDiary Privacy Policy</title>
+<style>
+  :root { --fg: #3B2F26; --fg2: #8A7863; --accent: #C1694F; --line: rgba(59,47,38,0.15); --bg: #FBF3E7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #F3E9DA; --fg2: #B6A28C; --accent: #E08A68; --line: rgba(243,233,218,0.18); --bg: #221C16; }
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body { max-width: 860px; margin: auto; padding: 1.25rem 1.25rem 4rem; background: var(--bg); color: var(--fg);
+    font-size: 15px; line-height: 1.6; font-family: -apple-system, "HarmonyOS Sans SC", "PingFang SC", sans-serif; }
+  h1 { font-size: 20px; text-align: center; margin: 0.5rem 0 0.25rem; }
+  .meta { text-align: center; color: var(--fg2); font-size: 13px; margin-bottom: 1.5rem; }
+  h2 { font-size: 16px; margin: 1.75rem 0 0.6rem; }
+  p { margin-bottom: 0.5rem; word-break: break-word; }
+  a { color: var(--accent); text-decoration: none; }
+  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 0.75rem; font-size: 13.5px; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { color: var(--fg2); font-weight: 600; }
+</style>
+</head>
+<body>
+<body>
+<h1>EchoDiary Privacy Policy</h1>
+<p class="meta">Effective date: October 10, 2026</p>
+<p><b>Developer</b>: Zhang Wenbo (张文博, individual developer)</p>
+<p>EchoDiary (心语记, "the app") is an offline-first voice diary. This policy explains what the app processes, why, where it is stored, when any network access happens, and your rights. The Chinese version prevails in case of any inconsistency.</p>
+
+<h2>1. What we process</h2>
+<p>The app has <b>no server, no account system and no third-party SDKs</b> (no analytics, ads, push or crash reporting), and does not request the network permission itself. Your diary never leaves your phone; we cannot access it.</p>
+<table>
+  <tr><th>Data</th><th>When</th><th>Purpose</th><th>Stored</th><th>Leaves device</th></tr>
+  <tr><td>Voice (microphone audio)</td><td>While you hold the record button</td><td>Transcribed on device by the system speech service</td><td><b>Not stored</b>; discarded after transcription</td><td>No</td></tr>
+  <tr><td>Diary text</td><td>When you save an entry</td><td>Show, review, read aloud and export entries</td><td>App-private database</td><td>No</td></tr>
+  <tr><td>Mood labels and keywords</td><td>Analyzed on device when saving; when you correct a mood</td><td>Tag entries and build monthly reports</td><td>App-private database</td><td>No</td></tr>
+  <tr><td>Unsaved draft</td><td>Between transcription and saving</td><td>Avoid losing content if the app closes</td><td>App-private storage</td><td>No</td></tr>
+  <tr><td>Settings (language, reminder, Pro status, consent record)</td><td>When you change settings or purchase</td><td>Keep your preferences and entitlement</td><td>App-private storage</td><td>No</td></tr>
+  <tr><td>Purchase records (product ID, order ID, purchase token)</td><td>When you buy or restore Pro, and on launch to verify ownership</td><td>Unlock Pro if you own it</td><td>Handled by HUAWEI IAP; the app only stores "Pro unlocked" locally</td><td>Yes, see section 3</td></tr>
+</table>
+<p>We do <b>not</b> collect device identifiers, location, contacts, call logs, SMS, photos, installed-app lists or clipboard content.</p>
+
+<h2>2. Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>When requested</th><th>Purpose</th><th>If denied</th></tr>
+  <tr><td>Microphone</td><td>The first time you hold the record button</td><td>Record and transcribe your voice on device</td><td>No recording; browsing entries and reports still works</td></tr>
+  <tr><td>Agent reminder, notifications</td><td>When you turn on the daily reminder</td><td>Send a local reminder at your chosen time (no network)</td><td>No reminders; everything else works</td></tr>
+</table>
+<p>You can revoke permissions at any time in the system Settings. The app does not repeatedly ask after you deny.</p>
+
+<h2>3. When the network is used (by system services)</h2>
+<p>Transcription, mood analysis, keyword extraction, storage and reminders all run on device and <b>work fully offline</b>. Only these system services may use the network; the app itself makes no network requests:</p>
+<p>(1) <b>Buying and restoring Pro</b> through HUAWEI In-App Purchases (IAP Kit). Payment happens in the system cashier and may require your HUAWEI ID; <b>the app never sees or stores payment details</b>. After you consent to this policy, the app asks IAP Kit on each launch which products you own so Pro can be restored after reinstalling or switching phones; offline or signed out, this check silently fails. Huawei processes this data under its own privacy policy.</p>
+<p>(2) <b>Offline speech resources</b>: if the offline Mandarin recognition or English voice is not yet installed, the system speech service may download it. No diary content is involved.</p>
+
+<h2>4. Storage and retention</h2>
+<p>Entries, moods, keywords and settings are stored in the app's private directory on your phone. We have no server copy. Data is kept until you delete an entry or uninstall the app; <b>uninstalling removes all local data</b>. Files you export (Pro) are saved where you choose and are not removed on uninstall. If you use the system Backup &amp; Restore feature, the system may include this app's data in your backup.</p>
+
+<h2>5. Sharing</h2>
+<p>We do <b>not</b> sell, rent, share, transfer or publicly disclose your personal information. Apart from the purchase processing described in section 3, no data is provided to any third party, except where required by law.</p>
+
+<h2>6. Your rights</h2>
+<p>View and correct entries and moods in the app; delete single entries, or uninstall to delete everything; export entries (Pro); <b>withdraw consent</b> in Settings &gt; Withdraw privacy consent (the app then closes and asks again next time); revoke permissions in system Settings. Because we hold no copy of your data, these actions take effect on your device immediately.</p>
+
+<h2>7. Children</h2>
+<p>The app is intended for adults and not for children under 14. Minors should use it only with a guardian's consent. Guardians can delete entries, uninstall the app or contact us.</p>
+
+<h2>8. Updates</h2>
+<p>We will publish any update here with a new effective date. Material changes will be shown in the app the next time you open it, and your consent will be requested again.</p>
+
+<h2>9. Contact</h2>
+<p>Developer: Zhang Wenbo</p>
+<p>Email: <a href="mailto:andyzheung@aliyun.com">andyzheung@aliyun.com</a> — we reply within 15 working days.</p>
+
+<p style="margin-top:2rem"><a href="./user-agreement.en.html">EchoDiary User Agreement</a></p>
+</body>
+</html>
