@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="拍记账隐私政策，说明拍记账的服务与信息处理方式。" />
+  <title>拍记账隐私政策</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #fff; --ink: #202124; --muted: #5f6368; --link: #0a59f7; --border: #d9dce1; --tint: #f4f7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 860px; padding: 2rem 1.25rem 4rem; background: var(--bg); color: var(--ink); font: 16px/1.75 system-ui, -apple-system, sans-serif; overflow-wrap: anywhere; }
+    header { text-align: center; margin-bottom: 2rem; }
+    .icon { width: 64px; height: 64px; color: var(--link); }
+    h1 { font-size: 1.5rem; line-height: 1.4; margin: 1rem 0 .5rem; }
+    h2 { font-size: 1.125rem; margin: 2.25rem 0 .75rem; }
+    p { margin: .65rem 0; }
+    .date, .identity { color: var(--muted); }
+    a { color: var(--link); text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    ul { padding-left: 1.5rem; }
+    li { margin: .4rem 0; }
+    .table-wrap { overflow-x: auto; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .925rem; }
+    th, td { border: 1px solid var(--border); padding: .6rem .75rem; text-align: left; vertical-align: top; }
+    th { background: var(--tint); }
+    footer { margin-top: 2.5rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101114; --ink: #ebedf0; --muted: #aeb4bf; --link: #82afff; --border: #454a54; --tint: #1c2537; } }
+  </style>
+</head>
+<body>
+  <header>
+    <svg class="icon" viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M48 9 78 21v24c0 18.5-12.5 34.5-30 42C30.5 79.5 18 63.5 18 45V21L48 9Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="m36 47 9 9 16-20" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h1>拍记账隐私政策</h1>
+    <p class="date">生效日期：2026年10月16日</p>
+  </header>
+  <main>
+    <p class="identity">开发者及运营者：张文博<br />应用名称：拍记账（ReceiptLens）<br />应用包名：com.andyzhang.receiptlens</p>
+    <p>拍记账是一款本地记账工具。本政策说明账目、拍照识别、语音记账、生物识别锁与应用内购买涉及的信息处理方式。请在使用前阅读；首次启动时，你可以选择同意或退出应用。</p>
+
+    <section aria-labelledby="data"><h2 id="data">一、我们如何处理你的信息</h2>
+    <div class="table-wrap" role="region" aria-label="信息处理说明表" tabindex="0"><table>
+      <thead><tr><th scope="col">信息</th><th scope="col">处理场景与用途</th><th scope="col">保存方式</th></tr></thead>
+      <tbody>
+        <tr><td>账目日期、金额、商家、分类、备注及识别后确认的内容</td><td>你录入、修改、查看账目和生成统计时使用</td><td>当前设备的应用私有 SQLite 数据库；不上传至开发者服务器</td></tr>
+        <tr><td>预算、显示偏好、锁定开关、桌面卡片汇总及购买权益状态</td><td>保存设置、展示记账汇总和判断功能权限</td><td>当前设备的应用私有存储</td></tr>
+        <tr><td>小票图像</td><td>你主动拍照时，在设备本地识别文字</td><td>仅在识别过程中使用，应用不留存小票原图</td></tr>
+        <tr><td>语音及转写内容</td><td>你主动语音记账时，通过系统离线语音识别能力转写并解析账目</td><td>应用不保存录音文件；确认的账目信息在本地保存</td></tr>
+        <tr><td>生物识别认证结果</td><td>你开启生物识别锁后，由系统验证身份并向应用返回认证结果</td><td>应用不获取或保存指纹、人脸图像或生物识别模板</td></tr>
+      </tbody>
+    </table></div>
+    <p>应用没有自建账号体系、云端账本或开发者数据服务器，不接入广告、用户行为统计或崩溃上报组件，也不通过开发者服务器接收你的账目、图像和录音。</p>
+    </section>
+
+    <section aria-labelledby="permissions"><h2 id="permissions">二、相机、麦克风与生物识别权限</h2>
+    <ul>
+      <li><strong>相机：</strong>你使用拍照记账时申请，用于拍摄小票并在设备本地识别文字。拒绝后不能拍照记账，不影响查看已有账目和设置；语音记账仍需麦克风授权。</li>
+      <li><strong>麦克风：</strong>你使用语音记账时申请，用于设备本地语音识别。拒绝后不能语音记账，不影响查看已有账目和设置；拍照记账仍需相机授权。</li>
+      <li><strong>生物识别：</strong>你启用生物识别锁并进行认证时使用，由系统完成指纹或人脸认证。未授予权限或设备未录入可用凭据时，锁定功能无法正常使用；请先在系统设置中完成相应设置。</li>
+    </ul>
+    <p>你可以在系统设置中找到拍记账的应用权限，撤回相机、麦克风或生物识别授权。撤回授权不会自动删除已经保存的账目，也不会撤销已完成的购买。</p>
+    </section>
+
+    <section aria-labelledby="iap"><h2 id="iap">三、华为系统服务与应用内购买</h2>
+    <p>应用使用 HarmonyOS 提供的相机、文字识别、离线语音识别、生物识别及系统分享能力，不集成用于广告或统计的第三方 SDK。</p>
+    <p><strong>Pro 购买、商品查询、购买恢复和权益校验使用华为应用内支付服务（IAP），可能需要网络连接及华为账号。</strong>相关账号、订单和支付信息由华为按系统支付页面展示的规则及隐私说明处理。应用接收商品信息、购买操作结果及已购商品信息，用于确认和恢复权益，并在设备本地缓存 Pro 状态。应用不会获取你的支付密码或银行卡完整信息。</p>
+    <p>应用没有开发者支付服务器，不将本地账目、图像或录音提交给 IAP。联网购买和权益查询与本地记账功能的信息处理方式不同，本政策不将整个应用描述为完全离线。</p>
+    </section>
+
+    <section aria-labelledby="storage"><h2 id="storage">四、数据存储、保留与安全</h2>
+    <p>账目和设置保存在当前设备的应用私有目录中，保留至你删除相关内容、清除应用数据或卸载应用。系统管理应用私有目录及访问权限；开发者不持有可用于恢复账目的服务器副本。</p>
+    <p>请妥善保管设备并核验导出的备份。设备损坏、重置、误删或卸载可能造成数据丢失。生物识别锁用于应用访问认证，不能替代设备本身的安全设置和数据备份。</p>
+    </section>
+
+    <section aria-labelledby="rights"><h2 id="rights">五、数据导出、删除与共享</h2>
+    <p>你可以在应用内查看、修改和删除账目，并在“设置 &gt; 清除所有数据”删除本地账目并重置相关设置。清除本地数据不会取消华为账号下已完成的购买；购买记录与恢复购买由华为服务处理。</p>
+    <p>当你主动导出 CSV 时，应用先在本机缓存目录生成文件，再打开系统分享面板。你选择保存位置或接收应用后，导出内容可能离开应用私有存储，并由你选择的接收方处理。<strong>外部保存或分享的副本不会因在拍记账中删除账目或卸载拍记账而自动删除</strong>，请自行管理这些副本。</p>
+    <p>除你主动发起的分享和第三节所述的系统服务处理外，开发者不出售、出租或向第三方提供本地账目。你可通过下方邮箱咨询信息处理问题；请勿在反馈中发送支付密码、完整银行卡号或不必要的账目明细。</p>
+    </section>
+
+    <section aria-labelledby="minors"><h2 id="minors">六、未成年人</h2>
+    <p>如你是未成年人，请在监护人指导和同意后阅读本政策并使用应用；涉及购买时，应取得监护人同意。监护人可通过下方邮箱与我们联系。</p>
+    </section>
+
+    <section aria-labelledby="updates"><h2 id="updates">七、政策更新</h2>
+    <p>我们可能因功能或信息处理方式变化更新本政策，并在本页面标明生效日期。涉及信息处理方式的重要变化时，我们会在应用中提示，并按适用要求取得相应授权。</p>
+    </section>
+
+    <section aria-labelledby="contact"><h2 id="contact">八、联系我们</h2>
+    <p>开发者及运营者：张文博<br />联系邮箱：<a href="mailto:andyzheung@aliyun.com">andyzheung@aliyun.com</a></p>
+    </section>
+  </main>
+  <footer><a href="./user-agreement.html">《拍记账用户协议》</a></footer>
+</body>
+</html>
